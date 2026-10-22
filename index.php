@@ -253,8 +253,10 @@
 
         <section class="section registration-section" id="registration">
             <div class="container">
+                <dialog id="registration-dialog" class="registration-dialog" aria-labelledby="registration-title" open>
                 <div class="registration-panel">
-                    <h2 class="section-title">Заявка на курс — без оплаты</h2>
+                    <button type="button" class="registration-close" aria-label="Закрыть форму">×</button>
+                    <h2 class="section-title" id="registration-title">Заявка на курс — без оплаты</h2>
                     <p class="section-lead">
                         14 ноября, 10:00–18:00, Москва — от 4 900 ₽, сертификат включён.
                         Оставьте контакты: мы подтвердим место и ответим на вопросы до оплаты.
@@ -281,6 +283,7 @@
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
                 </div>
+                </dialog>
             </div>
         </section>
     </main>

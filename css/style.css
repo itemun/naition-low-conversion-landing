@@ -377,6 +377,54 @@ img {
     box-shadow: var(--shadow);
 }
 
+.registration-dialog {
+    position: static;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+}
+
+.registration-dialog:modal {
+    position: fixed;
+    width: min(880px, calc(100% - 32px));
+    max-height: calc(100% - 32px);
+    margin: auto;
+    border-radius: 24px;
+    background: var(--white);
+    overflow: auto;
+}
+
+.registration-dialog::backdrop {
+    background: rgba(20, 35, 32, 0.65);
+}
+
+.registration-close {
+    display: none;
+}
+
+.registration-dialog:modal .registration-close {
+    display: block;
+    float: right;
+    width: 44px;
+    height: 44px;
+    margin: -12px -12px 0 8px;
+    border: 0;
+    border-radius: 50%;
+    background: #f0ebe3;
+    color: var(--heading);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+body.registration-modal-open {
+    overflow: hidden;
+}
+
 .form-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

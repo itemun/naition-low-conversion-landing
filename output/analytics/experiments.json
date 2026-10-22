@@ -118,7 +118,21 @@
       "hypothesis": "Remove pointer cursor and hover lift from informational cards that do not perform an action",
       "parent": "exp08-concise-copy",
       "planned_visits": 50,
-      "status": "prepared"
+      "status": "completed",
+      "commit": "7541769",
+      "visits": 50,
+      "orders": 12,
+      "errors": 0,
+      "duration_seconds": 275.2,
+      "decision": "Promising preliminary result; retain for next experiment, not yet confirmed"
+    },
+    {
+      "version": "exp10-registration-dialog",
+      "hypothesis": "Open the existing form in a modal immediately on CTA click to reduce the context switch",
+      "parent": "exp09-honest-affordances",
+      "planned_visits": 50,
+      "status": "prepared",
+      "measurement_note": "Name field receives automatic focus; form_start still requires input, so focus is not comparable to earlier runs"
     }
   ]
 }
