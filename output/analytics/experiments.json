@@ -202,8 +202,33 @@
   "confirmation": {
     "version": "exp11-clear-base-offer",
     "planned_visits": 100,
-    "status": "prepared",
+    "status": "completed",
     "selection_reason": "Highest completed screening result: 18/50; same UI and telemetry version as original screening",
-    "original_target_achieved": false
+    "original_target_achieved": false,
+    "commit": "772ad1f",
+    "visits": 100,
+    "orders": 30,
+    "errors": 0,
+    "duration_seconds": 537.9,
+    "conversion": 0.3,
+    "telemetry_unique_sessions_by_event": {
+      "page": 101,
+      "cta": 100,
+      "form_view": 101,
+      "form_start": 30,
+      "submit": 30,
+      "success": 30
+    }
+  },
+  "final_decision": "Keep exp11-clear-base-offer and stop per revised user scope; screening 18/50, independent confirmation 30/100. Sequential tests do not establish causality.",
+  "leaderboard_snapshot": {
+    "updated_utc": "2026-10-22 21:34:47",
+    "min_requests": 50,
+    "rank": 1,
+    "requests": 101,
+    "orders": 30,
+    "conversion_percent": 29.7,
+    "runner_up_percent": 29.4,
+    "url": "https://leaders.naition.sortedmap.ru/?min_visits=50&sort=conversion&dir=desc"
   }
 }
