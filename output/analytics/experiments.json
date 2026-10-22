@@ -1,7 +1,33 @@
 {
-  "target": {"conversion_above": 0.4, "confirmation_visits": 500},
+  "target": {
+    "conversion_above": 0.4,
+    "confirmation_visits": 500
+  },
   "experiments": [
-    {"version": "baseline-15.6-heatmap-v1", "visits": 200, "orders": 27, "errors": 0},
-    {"version": "exp01-compact-form", "hypothesis": "A compact two-row desktop form and explicit price/payment context increase form starts", "planned_visits": 100, "status": "prepared"}
+    {
+      "version": "baseline-15.6-heatmap-v1",
+      "visits": 200,
+      "orders": 27,
+      "errors": 0
+    },
+    {
+      "version": "exp01-compact-form",
+      "hypothesis": "A compact two-row desktop form and explicit price/payment context increase form starts",
+      "planned_visits": 100,
+      "status": "completed",
+      "commit": "9611609",
+      "started_utc": "2026-10-22T19:00:19Z",
+      "visits": 100,
+      "orders": 20,
+      "errors": 0,
+      "duration_seconds": 567.6
+    },
+    {
+      "version": "exp02-accordion-program",
+      "hypothesis": "Collapsible program modules reduce initial reading burden while preserving all details",
+      "parent": "exp01-compact-form",
+      "planned_visits": 100,
+      "status": "prepared"
+    }
   ]
 }
