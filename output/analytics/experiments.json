@@ -1,0 +1,7 @@
+{
+  "target": {"conversion_above": 0.4, "confirmation_visits": 500},
+  "experiments": [
+    {"version": "baseline-15.6-heatmap-v1", "visits": 200, "orders": 27, "errors": 0},
+    {"version": "exp01-compact-form", "hypothesis": "A compact two-row desktop form and explicit price/payment context increase form starts", "planned_visits": 100, "status": "prepared"}
+  ]
+}

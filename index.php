@@ -288,10 +288,10 @@
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
-                    <h2 class="section-title">Записаться на курс</h2>
+                    <h2 class="section-title">Заявка на курс — без оплаты</h2>
                     <p class="section-lead">
-                        Оставьте контакты — мы уточним дату, подтвердим место и ответим на вопросы.
-                        На этом шаге оплачивать курс не нужно.
+                        Практический день в Москве — от 4 900 ₽, сертификат включён.
+                        Оставьте контакты: мы уточним дату и ответим на вопросы до оплаты.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
@@ -308,10 +308,10 @@
                         </label>
                         <label>
                             Для чего вам курс?
-                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий" aria-describedby="purpose-hint"></textarea>
+                            <textarea name="purpose" required rows="1" placeholder="Для семьи, работы или путешествий" aria-describedby="purpose-hint"></textarea>
                             <span class="field-hint" id="purpose-hint">Достаточно пары слов.</span>
                         </label>
-                        <button type="submit" class="btn">Отправить заявку</button>
+                        <button type="submit" class="btn">Оставить заявку без оплаты</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
                 </div>

@@ -1,5 +1,7 @@
 """Run against an isolated local PHP server, never the deployed site."""
-import http.cookiejar, json, os, urllib.request, urllib.error
+import http.cookiejar, json, os, urllib.request, urllib.error, re
+from pathlib import Path
+version = re.search(r"const version = '([^']+)'", (Path(__file__).resolve().parents[1] / 'js/telemetry.js').read_text()).group(1)
 base = os.environ.get('ANALYTICS_TEST_URL', 'http://127.0.0.1:8767')
 assert base.startswith('http://127.0.0.1:')
 jar = http.cookiejar.CookieJar()
@@ -9,7 +11,7 @@ def request(path, data=None, headers=None):
     try:
         with client.open(req) as r: return r.status, r.read()
     except urllib.error.HTTPError as e: return e.code, e.read()
-payload = {'id':'0123456789abcdef0123456789abcdef','version':'baseline-15.6-heatmap-v1','device':'desktop','qa':True,'events':[{'seq':1,'ms':0,'kind':'page','target':'page','value':0,'x':-1,'y':-1},{'seq':2,'ms':1000,'kind':'click','target':'cta-hero','value':0,'x':.5,'y':.5}]}
+payload = {'id':'0123456789abcdef0123456789abcdef','version':version,'device':'desktop','qa':True,'events':[{'seq':1,'ms':0,'kind':'page','target':'page','value':0,'x':-1,'y':-1},{'seq':2,'ms':1000,'kind':'click','target':'cta-hero','value':0,'x':.5,'y':.5}]}
 def post(p, origin=base): return request('/telemetry/collect.php',json.dumps(p).encode(),{'Content-Type':'application/json','Origin':origin})[0]
 assert request('/admin/analytics.php?export=1')[0] == 401
 assert request('/telemetry/collect.php')[0] == 405

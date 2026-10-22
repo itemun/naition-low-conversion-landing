@@ -1,0 +1,17 @@
+{
+  "version": "baseline-15.6-heatmap-v1",
+  "cohort_start_utc": "2026-10-22T18:21:27Z",
+  "cohort_last_start_utc": "2026-10-22T18:38:38Z",
+  "simulator_visits_user_reported": 200,
+  "telemetry_sessions": 200,
+  "telemetry_events": 9275,
+  "orders": 27,
+  "conversion": 0.135,
+  "funnel": {"page": 200, "cta": 176, "form_view": 176, "submit_view": 176, "form_start": 27, "submit": 27, "success": 27},
+  "recorded_errors": 0,
+  "cta_targets": {"cta-hero": 176},
+  "devices": {"desktop": 200},
+  "section_dwell_median_seconds": {"hero": 17, "about": 1, "program": 1, "injuries": 2, "legal": 20, "photo": 1, "instructors": 5, "pricing": 5, "registration": 6.5},
+  "exclusions": ["QA session", "One session at 18:21:22 UTC with repeated programmatic card clicks; inferred preflight probe, not confirmed"],
+  "limitations": ["Visibility duration does not establish reading or interest", "Repeated center clicks suggest scripted navigation", "Observed form abandonment does not establish its cause", "200 visits are insufficient to interpret a small difference from earlier 15.2-15.6% runs as a treatment effect"]
+}
