@@ -272,29 +272,7 @@ img {
 }
 
 .pricing-grid {
-    grid-template-columns: minmax(0, 1fr);
-    max-width: 880px;
-    margin: 0 auto;
-}
-
-.pricing-options summary {
-    padding: 16px 20px;
-    border-radius: 12px;
-    background: var(--bg-soft);
-    cursor: pointer;
-    color: var(--heading);
-    font-weight: 600;
-}
-
-.pricing-options-grid {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 22px;
-    margin-top: 20px;
-}
-
-.pricing-options:not([open]) > .pricing-options-grid {
-    display: none;
 }
 
 .pricing-card {
@@ -496,4 +474,14 @@ img {
     *, *::before, *::after {
         transition: none !important;
     }
+}
+
+/* Keep all four fields visible together on wide screens. */
+@media (min-width: 1000px) {
+    .registration-panel { max-width: 1120px; padding: 24px; }
+    .registration-panel .section-title { font-size: 30px; margin-bottom: 12px; }
+    .registration-panel .section-lead { font-size: 16px; margin-bottom: 18px; }
+    .form-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .form-grid input, .form-grid textarea { font-size: 15px; padding: 12px; min-height: 48px; }
+    .field-hint { font-size: 13px; }
 }

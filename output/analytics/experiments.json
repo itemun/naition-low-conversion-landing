@@ -158,7 +158,26 @@
       "hypothesis": "Show one complete base course first and reveal optional upgrades on demand to reduce choice burden",
       "parent": "exp11-clear-base-offer",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "6ee76d4",
+      "visits": 50,
+      "orders": 16,
+      "errors": 0,
+      "duration_seconds": 289.7,
+      "decision": "Restore exp11 open tariffs for next test; difference is inconclusive"
+    },
+    {
+      "version": "exp13-single-row-form",
+      "hypothesis": "Show all four required fields in one desktop row to reduce perceived form effort",
+      "parent": "exp11-clear-base-offer",
+      "planned_visits": 50,
       "status": "prepared"
     }
-  ]
+  ],
+  "scope_update": {
+    "preserve_section_order": true,
+    "additional_experiments_after_exp12": 2,
+    "confirmation_visits": 100,
+    "stop_after_confirmation": true
+  }
 }

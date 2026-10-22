@@ -10,7 +10,7 @@ if ((int)($_SERVER['CONTENT_LENGTH'] ?? 0) > 48000) { http_response_code(413); e
 $raw = file_get_contents('php://input', false, null, 0, 48001);
 if (strlen($raw) > 48000) { http_response_code(413); exit; }
 $p = json_decode($raw, true);
-if (!is_array($p) || !preg_match('/^[a-f0-9]{32}$/D', (string)($p['id'] ?? '')) || ($p['version'] ?? '') !== 'exp12-focused-pricing' || !in_array($p['device'] ?? '', ['mobile','desktop'], true) || !is_array($p['events'] ?? null) || count($p['events']) > 100) { http_response_code(400); exit; }
+if (!is_array($p) || !preg_match('/^[a-f0-9]{32}$/D', (string)($p['id'] ?? '')) || ($p['version'] ?? '') !== 'exp13-single-row-form' || !in_array($p['device'] ?? '', ['mobile','desktop'], true) || !is_array($p['events'] ?? null) || count($p['events']) > 100) { http_response_code(400); exit; }
 $kinds = ['page','click','focus','dwell','scroll','cta','form_view','form_start','submit_view','validation_error','submit','submit_error','success','end'];
 $targets = '/^(?:page|hero|about|program|injuries|legal|photo|instructors|pricing|registration|footer|cta-(?:hero|program|[123])|field-(?:name|phone|email|purpose)|submit|(?:feature|module|injury|instructor|tariff)-[1-6])$/D';
 $rows = [];
