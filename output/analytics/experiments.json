@@ -39,7 +39,22 @@
       "hypothesis": "Less vertical space and denser desktop card grids improve completion without removing content",
       "parent": "exp02-accordion-program",
       "planned_visits": 100,
-      "status": "prepared"
+      "status": "completed",
+      "commit": "5ea8d2f",
+      "visits": 100,
+      "orders": 17,
+      "errors": 0,
+      "duration_seconds": 553.2,
+      "decision": "Revert density changes; no observed improvement"
+    },
+    {
+      "version": "exp04-specific-date",
+      "hypothesis": "A specific future course date removes scheduling uncertainty",
+      "parent": "exp02-accordion-program",
+      "planned_visits": 100,
+      "status": "prepared",
+      "date": "2026-11-14",
+      "authorization": "User confirmed this is a training mockup and authorized choosing the date"
     }
   ]
 }

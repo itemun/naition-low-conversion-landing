@@ -12,7 +12,7 @@
 <body>
     <header class="hero">
         <div class="container hero-content">
-            <span class="hero-badge">Офлайн-курс · Москва · Группа до 14 человек</span>
+            <span class="hero-badge">Офлайн-курс · 14 ноября 2026 · Москва</span>
             <h1>Первая помощь: практический курс для каждого</h1>
             <p class="hero-text">
                 Научитесь действовать уверенно в экстренной ситуации: остановить кровотечение,
@@ -27,7 +27,7 @@
             <div class="meta-grid">
                 <div class="meta-card">
                     <strong>Дата</strong>
-                    Дату ближайшей группы уточним при записи
+                    14 ноября 2026, суббота
                 </div>
                 <div class="meta-card">
                     <strong>Время</strong>
@@ -138,7 +138,7 @@
                 </div>
                 <div class="program-actions">
                     <button type="button" class="btn btn-register" data-cta="program">Записаться на курс</button>
-                    <p class="cta-note">От 4 900 ₽ · место и дату подтвердим при обращении</p>
+                    <p class="cta-note">14 ноября · от 4 900 ₽ · группа до 14 человек</p>
                 </div>
             </div>
         </section>
@@ -302,8 +302,8 @@
                 <div class="registration-panel">
                     <h2 class="section-title">Заявка на курс — без оплаты</h2>
                     <p class="section-lead">
-                        Практический день в Москве — от 4 900 ₽, сертификат включён.
-                        Оставьте контакты: мы уточним дату и ответим на вопросы до оплаты.
+                        14 ноября, 10:00–18:00, Москва — от 4 900 ₽, сертификат включён.
+                        Оставьте контакты: мы подтвердим место и ответим на вопросы до оплаты.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
