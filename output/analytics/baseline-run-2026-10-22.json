@@ -1,0 +1,30 @@
+{
+  "captured_at": "2026-10-22T17:55:59+00:00",
+  "version": "baseline-15.6-analytics-v1",
+  "simulator_visits_user_reported": 500,
+  "database_visits": 503,
+  "orders": 76,
+  "conversion_simulator_denominator": 0.152,
+  "previous_run": {
+    "visits": 500,
+    "orders": 78
+  },
+  "metrica_scope": "2026-10-22, all day; funnel goals only newly instrumented deployment; includes manual QA around 17:07 UTC; not a strictly sequential cohort",
+  "metrica_goal_visits": {
+    "page_view": 498,
+    "cta_view": 502,
+    "cta_click": 445,
+    "form_view": 446,
+    "form_start": 76,
+    "submit_view": 446,
+    "submit": 76,
+    "success": 76
+  },
+  "metrica_error_goals": "No data for validation_error or submit_error",
+  "limitations": [
+    "Manual QA visits not filtered out",
+    "Goal visit counts do not prove ordered transitions",
+    "Metrica delivery can be incomplete or delayed"
+  ],
+  "interpretation": "Largest observed drop is between seeing the form and starting input; all recorded starts reached submission and success."
+}

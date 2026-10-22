@@ -145,6 +145,7 @@ if ($isAuthorized) {
         <?php else: ?>
             <div class="toolbar">
                 <p>Всего заявок: <?= count($orders) ?></p>
+                <a href="analytics.php">Карта поведения и воронка</a>
                 <form method="post">
                     <button type="submit" name="logout" value="1">Выйти</button>
                 </form>

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registration-form');
     const message = document.getElementById('form-message');
     const registerButtons = document.querySelectorAll('.btn-register');
-    const version = 'baseline-15.6-analytics-v1';
+    const version = 'baseline-15.6-heatmap-v1';
     const startedAt = Date.now();
     const seen = new Set();
     let lastPlacement = 'direct';
@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
     const trackGoal = (goal, params = {}) => {
+        try { window.landingTelemetry?.track(goal, params); } catch (_) { /* Optional analytics. */ }
         const details = {
             version,
             elapsed_seconds: Math.round((Date.now() - startedAt) / 1000),

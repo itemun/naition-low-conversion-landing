@@ -6,6 +6,7 @@
     <title>Первая помощь: практический курс для каждого</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="api/visit.php" defer></script>
+    <script src="js/telemetry.js" defer></script>
     <script src="js/main.js" defer></script>
 </head>
 <body>

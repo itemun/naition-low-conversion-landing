@@ -8,6 +8,8 @@ RUN apt-get update \
 COPY . /var/www/html/
 
 RUN mkdir -p /var/www/html/data \
-    && chown -R www-data:www-data /var/www/html/data
+    && mkdir -p /var/www/analytics-data \
+    && chmod 700 /var/www/analytics-data \
+    && chown -R www-data:www-data /var/www/html/data /var/www/analytics-data
 
 EXPOSE 80
