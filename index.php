@@ -82,7 +82,7 @@
                 </p>
                 <div class="program-list">
                     <article class="program-module">
-                        <details>
+                        <details name="course-program">
                         <summary>10:00 – 11:00 · Оценка обстановки и безопасность</summary>
                         <ul>
                             <li>Научитесь оценивать безопасность места происшествия и состояние пострадавшего.</li>
@@ -91,7 +91,7 @@
                         </details>
                     </article>
                     <article class="program-module">
-                        <details>
+                        <details name="course-program">
                         <summary>11:00 – 12:30 · Сердечно-легочная реанимация</summary>
                         <ul>
                             <li>Освоите алгоритм СЛР для взрослых на манекене под контролем инструктора.</li>
@@ -100,7 +100,7 @@
                         </details>
                     </article>
                     <article class="program-module">
-                        <details>
+                        <details name="course-program">
                         <summary>12:30 – 13:30 · Обед и разбор кейсов</summary>
                         <ul>
                             <li>Отдохнёте и разберёте реальные ситуации из практики инструкторов.</li>
@@ -109,7 +109,7 @@
                         </details>
                     </article>
                     <article class="program-module">
-                        <details>
+                        <details name="course-program">
                         <summary>13:30 – 15:00 · Кровотечения и шок</summary>
                         <ul>
                             <li>Потренируетесь накладывать давящую повязку и использовать турникет на имитаторах ран.</li>
@@ -118,7 +118,7 @@
                         </details>
                     </article>
                     <article class="program-module">
-                        <details>
+                        <details name="course-program">
                         <summary>15:00 – 16:30 · Переломы, вывихи, ожоги</summary>
                         <ul>
                             <li>Отработаете фиксацию конечности подручными средствами на напарнике.</li>
@@ -127,7 +127,7 @@
                         </details>
                     </article>
                     <article class="program-module">
-                        <details>
+                        <details name="course-program">
                         <summary>16:30 – 18:00 · Итоговая практика и сертификация</summary>
                         <ul>
                             <li>Пройдёте сценарии с несколькими пострадавшими и ограниченным временем.</li>

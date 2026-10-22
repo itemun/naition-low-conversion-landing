@@ -80,6 +80,18 @@
       "hypothesis": "Keep registration CTA available while reading, hide it when form section is visible",
       "parent": "exp04-specific-date",
       "planned_visits": 50,
+      "status": "completed",
+      "visits": 50,
+      "orders": 6,
+      "errors": 0,
+      "duration_seconds": 281.3,
+      "decision": "Revert persistent CTA; no observed gain"
+    },
+    {
+      "version": "exp07-exclusive-program",
+      "hypothesis": "Program accordion opens one module at a time with explicit hidden content and whole-card interaction",
+      "parent": "exp05-card-interaction",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ]
