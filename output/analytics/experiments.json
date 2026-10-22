@@ -92,6 +92,19 @@
       "hypothesis": "Program accordion opens one module at a time with explicit hidden content and whole-card interaction",
       "parent": "exp05-card-interaction",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "4c38363",
+      "visits": 50,
+      "orders": 5,
+      "errors": 0,
+      "duration_seconds": 305.6,
+      "decision": "Discard exclusive accordion; restore visible program"
+    },
+    {
+      "version": "exp08-concise-copy",
+      "hypothesis": "Concise benefit-focused copy across sections and brief visible program reduce reading burden",
+      "parent": "exp04-specific-date",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ]
