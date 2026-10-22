@@ -54,14 +54,13 @@ img {
 }
 
 .hero {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     background:
         radial-gradient(circle at top right, rgba(184, 212, 227, 0.45), transparent 35%),
         radial-gradient(circle at bottom left, rgba(245, 198, 214, 0.35), transparent 30%),
         var(--bg-main);
-    padding: 80px 0 96px;
+    padding: 40px 0 48px;
 }
 
 .hero-content {
@@ -95,7 +94,7 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 18px;
-    margin-top: 40px;
+    margin-top: 24px;
 }
 
 .meta-card {
@@ -115,7 +114,7 @@ img {
 }
 
 .hero-note {
-    margin-top: 36px;
+    margin-top: 24px;
     padding: 24px 28px;
     border-radius: 18px;
     background: var(--peach);
@@ -318,8 +317,8 @@ img {
     padding: 14px 24px;
     border: none;
     border-radius: 999px;
-    background: var(--blue);
-    color: var(--heading);
+    background: #175b50;
+    color: var(--white);
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -336,8 +335,44 @@ img {
     width: 100%;
 }
 
+.hero-actions .btn-register,
+.program-actions .btn-register {
+    width: auto;
+    min-height: 48px;
+}
+
+.program-actions {
+    margin-top: 28px;
+}
+
+.cta-note {
+    margin: 10px 0 0;
+}
+
+.btn:focus-visible,
+.form-grid input:focus-visible,
+.form-grid textarea:focus-visible {
+    outline: 3px solid #175b50;
+    outline-offset: 4px;
+}
+
+.btn:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.program-module ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.program-module li + li {
+    margin-top: 6px;
+}
+
 .registration-section {
     background: var(--bg-soft);
+    scroll-margin-top: 16px;
 }
 
 .registration-panel {
@@ -351,7 +386,23 @@ img {
 
 .form-grid {
     display: grid;
-    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.form-grid label:nth-of-type(n + 3),
+.form-grid button {
+    grid-column: 1 / -1;
+}
+
+.registration-panel .section-lead {
+    margin-bottom: 24px;
+}
+
+.field-hint {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text);
 }
 
 .form-grid label {
@@ -372,7 +423,7 @@ img {
 }
 
 .form-grid textarea {
-    min-height: 140px;
+    min-height: 80px;
     resize: vertical;
 }
 
@@ -404,11 +455,30 @@ img {
 
     .hero {
         min-height: auto;
-        padding-top: 56px;
+        padding-top: 32px;
     }
 
     .registration-panel,
     .hero-note {
         padding: 24px;
+    }
+
+    .form-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hero-actions .btn-register,
+    .program-actions .btn-register {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        transition: none !important;
     }
 }
