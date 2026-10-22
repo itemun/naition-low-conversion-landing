@@ -67,6 +67,19 @@
       "hypothesis": "Program cards should respond to clicks on the whole card as well as their summary",
       "parent": "exp04-specific-date",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "3994b07",
+      "visits": 50,
+      "orders": 8,
+      "errors": 0,
+      "duration_seconds": 295.3,
+      "decision": "No observed gain; revert whole-card click handler"
+    },
+    {
+      "version": "exp06-persistent-cta",
+      "hypothesis": "Keep registration CTA available while reading, hide it when form section is visible",
+      "parent": "exp04-specific-date",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ]
