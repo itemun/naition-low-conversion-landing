@@ -184,7 +184,13 @@
       "hypothesis": "Place existing instructor credentials and supervised small-group practice next to hero CTA",
       "parent": "exp11-clear-base-offer",
       "planned_visits": 50,
-      "status": "prepared"
+      "status": "completed",
+      "commit": "9bd5243",
+      "visits": 50,
+      "orders": 13,
+      "errors": 0,
+      "duration_seconds": 272.5,
+      "decision": "Discard early credentials variant; select exp11 for independent confirmation"
     }
   ],
   "scope_update": {
@@ -192,5 +198,12 @@
     "additional_experiments_after_exp12": 2,
     "confirmation_visits": 100,
     "stop_after_confirmation": true
+  },
+  "confirmation": {
+    "version": "exp11-clear-base-offer",
+    "planned_visits": 100,
+    "status": "prepared",
+    "selection_reason": "Highest completed screening result: 18/50; same UI and telemetry version as original screening",
+    "original_target_achieved": false
   }
 }
