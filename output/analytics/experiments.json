@@ -52,9 +52,22 @@
       "hypothesis": "A specific future course date removes scheduling uncertainty",
       "parent": "exp02-accordion-program",
       "planned_visits": 100,
-      "status": "prepared",
+      "status": "completed",
       "date": "2026-11-14",
-      "authorization": "User confirmed this is a training mockup and authorized choosing the date"
+      "authorization": "User confirmed this is a training mockup and authorized choosing the date",
+      "commit": "d0f0a3f",
+      "visits": 100,
+      "orders": 16,
+      "errors": 0,
+      "duration_seconds": 575.6,
+      "decision": "No observed gain; retain concrete authorized date for clarity, not claimed as conversion improvement"
+    },
+    {
+      "version": "exp05-card-interaction",
+      "hypothesis": "Program cards should respond to clicks on the whole card as well as their summary",
+      "parent": "exp04-specific-date",
+      "planned_visits": 50,
+      "status": "prepared"
     }
   ]
 }

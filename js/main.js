@@ -3,7 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registration-form');
     const message = document.getElementById('form-message');
     const registerButtons = document.querySelectorAll('.btn-register');
-    const version = 'exp04-specific-date';
+    // The whole program card is a click target; summary retains native keyboard support.
+    document.querySelectorAll('.program-module').forEach((card) => {
+        const details = card.querySelector('details');
+        if (!details) return;
+        card.addEventListener('click', (event) => {
+            if (event.target.closest('summary, a, button, input, textarea, select')) return;
+            if (window.getSelection()?.toString()) return;
+            details.open = !details.open;
+        });
+    });
+    const version = 'exp05-card-interaction';
     const startedAt = Date.now();
     const seen = new Set();
     let lastPlacement = 'direct';
