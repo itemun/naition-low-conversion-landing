@@ -38,7 +38,7 @@ img {
 }
 
 .section {
-    padding: 72px 0;
+    padding: 36px 0;
 }
 
 .section-title {
@@ -48,7 +48,7 @@ img {
 }
 
 .section-lead {
-    margin: 0 0 40px;
+    margin: 0 0 24px;
     max-width: 760px;
     font-size: 1.08rem;
 }
@@ -60,7 +60,7 @@ img {
         radial-gradient(circle at top right, rgba(184, 212, 227, 0.45), transparent 35%),
         radial-gradient(circle at bottom left, rgba(245, 198, 214, 0.35), transparent 30%),
         var(--bg-main);
-    padding: 40px 0 48px;
+    padding: 28px 0 32px;
 }
 
 .hero-content {
@@ -74,18 +74,18 @@ img {
     background: var(--mint);
     color: var(--heading);
     font-size: 0.92rem;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .hero h1 {
-    margin: 0 0 24px;
-    font-size: clamp(2.4rem, 6vw, 4rem);
+    margin: 0 0 16px;
+    font-size: clamp(2.2rem, 5vw, 3rem);
     line-height: 1.1;
     color: var(--heading);
 }
 
 .hero-text {
-    margin: 0 0 32px;
+    margin: 0 0 20px;
     font-size: 1.15rem;
     max-width: 680px;
 }
@@ -100,7 +100,7 @@ img {
 .meta-card {
     background: var(--white);
     border-radius: 18px;
-    padding: 22px 24px;
+    padding: 16px;
     box-shadow: var(--shadow);
 }
 
@@ -114,8 +114,8 @@ img {
 }
 
 .hero-note {
-    margin-top: 24px;
-    padding: 24px 28px;
+    margin-top: 16px;
+    padding: 16px 20px;
     border-radius: 18px;
     background: var(--peach);
     color: var(--heading);
@@ -141,7 +141,7 @@ img {
 .legal-block {
     background: var(--white);
     border-radius: 20px;
-    padding: 28px;
+    padding: 20px;
     box-shadow: var(--shadow);
 }
 
@@ -175,6 +175,7 @@ img {
 
 .program-list {
     display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
 }
 
@@ -232,8 +233,20 @@ img {
     background: var(--bg-soft);
 }
 
+.legal-section .container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.legal-section .section-title,
+.legal-section .section-lead {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
 .legal-block {
-    margin-bottom: 18px;
+    margin-bottom: 0;
     border-left: 6px solid var(--pink);
 }
 
@@ -247,7 +260,7 @@ img {
 
 .emotional-photo img {
     width: 100%;
-    height: min(70vh, 560px);
+    height: min(45vh, 320px);
     object-fit: cover;
 }
 
@@ -260,8 +273,8 @@ img {
 }
 
 .instructor-photo {
-    width: 120px;
-    height: 120px;
+    width: 72px;
+    height: 72px;
     margin: 0 auto 18px;
     border-radius: 50%;
     display: grid;
@@ -473,7 +486,12 @@ img {
 
 @media (max-width: 720px) {
     .section {
-        padding: 56px 0;
+        padding: 32px 0;
+    }
+
+    .program-list,
+    .legal-section .container {
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .hero {

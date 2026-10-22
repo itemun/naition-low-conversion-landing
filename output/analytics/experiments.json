@@ -27,6 +27,18 @@
       "hypothesis": "Collapsible program modules reduce initial reading burden while preserving all details",
       "parent": "exp01-compact-form",
       "planned_visits": 100,
+      "status": "completed",
+      "commit": "a74ca6a",
+      "visits": 100,
+      "orders": 20,
+      "errors": 0,
+      "duration_seconds": 563.1
+    },
+    {
+      "version": "exp03-compact-layout",
+      "hypothesis": "Less vertical space and denser desktop card grids improve completion without removing content",
+      "parent": "exp02-accordion-program",
+      "planned_visits": 100,
       "status": "prepared"
     }
   ]
