@@ -272,7 +272,29 @@ img {
 }
 
 .pricing-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.pricing-options summary {
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: var(--bg-soft);
+    cursor: pointer;
+    color: var(--heading);
+    font-weight: 600;
+}
+
+.pricing-options-grid {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.pricing-options:not([open]) > .pricing-options-grid {
+    display: none;
 }
 
 .pricing-card {

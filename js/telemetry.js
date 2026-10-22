@@ -4,7 +4,7 @@
     const bytes = new Uint8Array(16);
     try { crypto.getRandomValues(bytes); } catch (_) { return; }
     const id = Array.from(bytes, b => b.toString(16).padStart(2, '0')).join('');
-    const version = 'exp11-clear-base-offer';
+    const version = 'exp12-focused-pricing';
     const qa = new URLSearchParams(location.search).get('analytics_qa') === '1';
     // Avoid collecting the live page embedded by Metrica's map viewer.
     if (new URLSearchParams(location.search).has('_ym_debug')) return;

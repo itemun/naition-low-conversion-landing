@@ -227,6 +227,9 @@
                         </ul>
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
+                    <details class="pricing-options">
+                        <summary>Дополнительные форматы: расширенный и корпоративный</summary>
+                        <div class="pricing-options-grid">
                     <article class="pricing-card">
                         <h3>Расширенный</h3>
                         <div class="price">7 900 ₽</div>
@@ -247,6 +250,8 @@
                         </ul>
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>

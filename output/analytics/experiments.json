@@ -145,6 +145,19 @@
       "hypothesis": "Make the complete base course at 4900 RUB the primary offer instead of highlighting the 7900 RUB upgrade",
       "parent": "exp09-honest-affordances",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "85751a6",
+      "visits": 50,
+      "orders": 18,
+      "errors": 0,
+      "duration_seconds": 294.8,
+      "decision": "Best screening result, below target; retain base-offer clarity"
+    },
+    {
+      "version": "exp12-focused-pricing",
+      "hypothesis": "Show one complete base course first and reveal optional upgrades on demand to reduce choice burden",
+      "parent": "exp11-clear-base-offer",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ]
