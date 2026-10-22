@@ -105,6 +105,19 @@
       "hypothesis": "Concise benefit-focused copy across sections and brief visible program reduce reading burden",
       "parent": "exp04-specific-date",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "95f3065",
+      "visits": 50,
+      "orders": 8,
+      "errors": 0,
+      "duration_seconds": 293.2,
+      "decision": "No observed conversion gain; retain brief visible program for next controlled comparison"
+    },
+    {
+      "version": "exp09-honest-affordances",
+      "hypothesis": "Remove pointer cursor and hover lift from informational cards that do not perform an action",
+      "parent": "exp08-concise-copy",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ]
