@@ -171,6 +171,19 @@
       "hypothesis": "Show all four required fields in one desktop row to reduce perceived form effort",
       "parent": "exp11-clear-base-offer",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "74bde6d",
+      "visits": 50,
+      "orders": 12,
+      "errors": 0,
+      "duration_seconds": 269.7,
+      "decision": "Discard single-row layout; restore exp11 form"
+    },
+    {
+      "version": "exp14-early-instructor-trust",
+      "hypothesis": "Place existing instructor credentials and supervised small-group practice next to hero CTA",
+      "parent": "exp11-clear-base-offer",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ],

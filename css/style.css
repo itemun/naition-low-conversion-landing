@@ -475,13 +475,3 @@ img {
         transition: none !important;
     }
 }
-
-/* Keep all four fields visible together on wide screens. */
-@media (min-width: 1000px) {
-    .registration-panel { max-width: 1120px; padding: 24px; }
-    .registration-panel .section-title { font-size: 30px; margin-bottom: 12px; }
-    .registration-panel .section-lead { font-size: 16px; margin-bottom: 18px; }
-    .form-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .form-grid input, .form-grid textarea { font-size: 15px; padding: 12px; min-height: 48px; }
-    .field-hint { font-size: 13px; }
-}
