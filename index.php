@@ -19,8 +19,8 @@
                 с инструкторами. Для семьи, работы и путешествий — без медицинской подготовки.
             </p>
             <div class="hero-actions">
-                <button type="button" class="btn btn-register" data-cta="hero">Записаться на курс</button>
-                <p class="cta-note">От 4 900 ₽ · сертификат и памятка включены</p>
+                <button type="button" class="btn btn-register" data-cta="hero">Записаться · 4 900 ₽</button>
+                <p class="cta-note">Базовый курс: полный день, сертификат и памятка</p>
             </div>
             <div class="meta-grid">
                 <div class="meta-card">
@@ -104,7 +104,7 @@
                 </div>
                 <div class="program-actions">
                     <button type="button" class="btn btn-register" data-cta="program">Записаться на курс</button>
-                    <p class="cta-note">14 ноября · от 4 900 ₽ · группа до 14 человек</p>
+                    <p class="cta-note">14 ноября · базовый курс 4 900 ₽ · группа до 14 человек</p>
                 </div>
             </div>
         </section>
@@ -214,11 +214,11 @@
             <div class="container">
                 <h2 class="section-title">Тарифы</h2>
                 <p class="section-lead">
-                    Выберите формат участия. Во все тарифы входят материалы, сертификат и доступ к памятке после курса.
+                    Базовый тариф за 4 900 ₽ включает весь учебный день. Дополнительные наборы и услуги — по желанию.
                 </p>
                 <div class="pricing-grid">
-                    <article class="pricing-card">
-                        <h3>Базовый</h3>
+                    <article class="pricing-card featured">
+                        <h3>Базовый — полный курс</h3>
                         <div class="price">4 900 ₽</div>
                         <ul class="pricing-list">
                             <li>Участие в полном однодневном курсе</li>
@@ -227,7 +227,7 @@
                         </ul>
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
-                    <article class="pricing-card featured">
+                    <article class="pricing-card">
                         <h3>Расширенный</h3>
                         <div class="price">7 900 ₽</div>
                         <ul class="pricing-list">
@@ -253,10 +253,8 @@
 
         <section class="section registration-section" id="registration">
             <div class="container">
-                <dialog id="registration-dialog" class="registration-dialog" aria-labelledby="registration-title" open>
                 <div class="registration-panel">
-                    <button type="button" class="registration-close" aria-label="Закрыть форму">×</button>
-                    <h2 class="section-title" id="registration-title">Заявка на курс — без оплаты</h2>
+                    <h2 class="section-title">Заявка на курс — без оплаты</h2>
                     <p class="section-lead">
                         14 ноября, 10:00–18:00, Москва — от 4 900 ₽, сертификат включён.
                         Оставьте контакты: мы подтвердим место и ответим на вопросы до оплаты.
@@ -283,7 +281,6 @@
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
                 </div>
-                </dialog>
             </div>
         </section>
     </main>

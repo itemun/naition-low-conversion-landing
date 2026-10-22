@@ -131,8 +131,21 @@
       "hypothesis": "Open the existing form in a modal immediately on CTA click to reduce the context switch",
       "parent": "exp09-honest-affordances",
       "planned_visits": 50,
-      "status": "prepared",
-      "measurement_note": "Name field receives automatic focus; form_start still requires input, so focus is not comparable to earlier runs"
+      "status": "completed",
+      "measurement_note": "Name field receives automatic focus; form_start still requires input, so focus is not comparable to earlier runs",
+      "commit": "703adb5",
+      "visits": 50,
+      "orders": 12,
+      "errors": 0,
+      "duration_seconds": 294.6,
+      "decision": "Same preliminary rate as inline form; revert dialog for simpler interaction"
+    },
+    {
+      "version": "exp11-clear-base-offer",
+      "hypothesis": "Make the complete base course at 4900 RUB the primary offer instead of highlighting the 7900 RUB upgrade",
+      "parent": "exp09-honest-affordances",
+      "planned_visits": 50,
+      "status": "prepared"
     }
   ]
 }

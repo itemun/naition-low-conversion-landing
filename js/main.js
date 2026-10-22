@@ -3,21 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registration-form');
     const message = document.getElementById('form-message');
     const registerButtons = document.querySelectorAll('.btn-register');
-    const registrationDialog = document.getElementById('registration-dialog');
-    if (registrationDialog) {
-        registrationDialog.querySelector('.registration-close')?.addEventListener('click', () => registrationDialog.close());
-        registrationDialog.addEventListener('close', () => {
-            document.body.classList.remove('registration-modal-open');
-            // Restore the same form in its normal page position after dismissal.
-            registrationDialog.setAttribute('open', '');
-        });
-        registrationDialog.addEventListener('click', (event) => {
-            if (!registrationDialog.matches(':modal') || event.target !== registrationDialog) return;
-            const rect = registrationDialog.getBoundingClientRect();
-            if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) registrationDialog.close();
-        });
-    }
-    const version = 'exp10-registration-dialog';
+    const version = 'exp11-clear-base-offer';
     const startedAt = Date.now();
     const seen = new Set();
     let lastPlacement = 'direct';
@@ -60,16 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
             lastPlacement = placements.get(button);
             trackGoal('registration_cta_click', { placement: lastPlacement });
             if (!registrationSection) {
-                return;
-            }
-
-            if (registrationDialog && typeof registrationDialog.showModal === 'function') {
-                if (!registrationDialog.matches(':modal')) {
-                    registrationDialog.removeAttribute('open');
-                    registrationDialog.showModal();
-                    document.body.classList.add('registration-modal-open');
-                    form?.querySelector('[name="name"]')?.focus({ preventScroll: true });
-                }
                 return;
             }
 
