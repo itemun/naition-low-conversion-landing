@@ -254,10 +254,11 @@
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
-                    <h2 class="section-title">Заявка на курс — без оплаты</h2>
+                    <h2 class="section-title">Запись без обязательств</h2>
                     <p class="section-lead">
                         14 ноября, 10:00–18:00, Москва — от 4 900 ₽, сертификат включён.
-                        Оставьте контакты: мы подтвердим место и ответим на вопросы до оплаты.
+                        После заявки мы свяжемся с вами, подтвердим место и ответим на вопросы.
+                        Отправка формы ни к чему не обязывает: решение об оплате вы примете после разговора.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
@@ -277,7 +278,7 @@
                             <textarea name="purpose" required rows="1" placeholder="Для семьи, работы или путешествий" aria-describedby="purpose-hint"></textarea>
                             <span class="field-hint" id="purpose-hint">Достаточно пары слов.</span>
                         </label>
-                        <button type="submit" class="btn">Оставить заявку без оплаты</button>
+                        <button type="submit" class="btn">Записаться без оплаты</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
                 </div>
