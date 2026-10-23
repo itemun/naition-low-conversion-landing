@@ -197,7 +197,7 @@
       "parent": "exp11-clear-base-offer",
       "hypothesis": "Larger centered warm-red CTAs plus a floating CTA when inline CTAs are off-screen improve registration",
       "planned_visits": 100,
-      "status": "prepared",
+      "status": "stopped_by_user",
       "rollback_tag": "baseline-before-red-cta",
       "baseline_independent_run": "30/100",
       "note": "Bundled hypothesis requested by user; effects of individual changes cannot be isolated",
@@ -206,7 +206,9 @@
         "orders": 150,
         "errors": 0,
         "duration_seconds": 2585.5
-      }
+      },
+      "commit": "5f7dc85",
+      "decision": "Restore baseline-before-red-cta at user request; incomplete test, no conversion conclusion"
     }
   ],
   "scope_update": {

@@ -475,34 +475,3 @@ img {
         transition: none !important;
     }
 }
-
-/* Experiment: warmer, more prominent registration actions. */
-.btn-register {
-    background: #a63d40;
-    min-height: 56px;
-    padding: 16px 30px;
-    font-size: 1.125rem;
-}
-.btn-register:hover { background: #8d3033; }
-.btn-register:focus-visible { outline-color: #a63d40; }
-.hero-actions, .program-actions { text-align: center; }
-.hero-actions .btn-register, .program-actions .btn-register {
-    min-height: 56px;
-    min-width: min(280px, 100%);
-}
-.floating-register {
-    position: fixed;
-    right: max(24px, env(safe-area-inset-right));
-    bottom: max(24px, env(safe-area-inset-bottom));
-    z-index: 50;
-    width: auto;
-    box-shadow: 0 8px 28px rgba(109, 36, 39, 0.25);
-}
-.floating-register[hidden] { display: none !important; }
-@media (max-width: 720px) {
-    .floating-register {
-        right: max(16px, env(safe-area-inset-right));
-        bottom: max(16px, env(safe-area-inset-bottom));
-        max-width: calc(100vw - 32px);
-    }
-}

@@ -10,9 +10,9 @@ if ((int)($_SERVER['CONTENT_LENGTH'] ?? 0) > 48000) { http_response_code(413); e
 $raw = file_get_contents('php://input', false, null, 0, 48001);
 if (strlen($raw) > 48000) { http_response_code(413); exit; }
 $p = json_decode($raw, true);
-if (!is_array($p) || !preg_match('/^[a-f0-9]{32}$/D', (string)($p['id'] ?? '')) || ($p['version'] ?? '') !== 'exp15-red-centered-floating-cta' || !in_array($p['device'] ?? '', ['mobile','desktop'], true) || !is_array($p['events'] ?? null) || count($p['events']) > 100) { http_response_code(400); exit; }
+if (!is_array($p) || !preg_match('/^[a-f0-9]{32}$/D', (string)($p['id'] ?? '')) || ($p['version'] ?? '') !== 'exp11-clear-base-offer' || !in_array($p['device'] ?? '', ['mobile','desktop'], true) || !is_array($p['events'] ?? null) || count($p['events']) > 100) { http_response_code(400); exit; }
 $kinds = ['page','click','focus','dwell','scroll','cta','form_view','form_start','submit_view','validation_error','submit','submit_error','success','end'];
-$targets = '/^(?:page|hero|about|program|injuries|legal|photo|instructors|pricing|registration|footer|cta-(?:hero|program|floating|[123])|field-(?:name|phone|email|purpose)|submit|(?:feature|module|injury|instructor|tariff)-[1-6])$/D';
+$targets = '/^(?:page|hero|about|program|injuries|legal|photo|instructors|pricing|registration|footer|cta-(?:hero|program|[123])|field-(?:name|phone|email|purpose)|submit|(?:feature|module|injury|instructor|tariff)-[1-6])$/D';
 $rows = [];
 foreach ($p['events'] as $e) {
     if (!is_array($e) || !is_int($e['seq'] ?? null) || $e['seq'] < 1 || $e['seq'] > 3000 || !in_array($e['kind'] ?? '', $kinds, true) || !preg_match($targets, (string)($e['target'] ?? ''))) { http_response_code(400); exit; }
