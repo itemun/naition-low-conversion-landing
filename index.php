@@ -254,31 +254,30 @@
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
-                    <h2 class="section-title">Запись без обязательств</h2>
+                    <h2 class="section-title">Заявка на курс — без оплаты</h2>
                     <p class="section-lead">
                         14 ноября, 10:00–18:00, Москва — от 4 900 ₽, сертификат включён.
-                        После заявки мы свяжемся с вами, подтвердим место и ответим на вопросы.
-                        Отправка формы ни к чему не обязывает: решение об оплате вы примете после разговора.
+                        Оставьте контакты: мы подтвердим место и ответим на вопросы до оплаты.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
-                            Имя
-                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
+                            Ваше имя
+                            <input type="text" name="name" required autocomplete="name" placeholder="Например, Анна">
                         </label>
                         <label>
-                            Телефон
+                            Телефон для связи
                             <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 900 123-45-67">
                         </label>
                         <label>
-                            E-mail
+                            Ваша почта
                             <input type="email" name="email" required autocomplete="email" placeholder="name@example.ru">
                         </label>
                         <label>
-                            Для чего вам курс?
-                            <textarea name="purpose" required rows="1" placeholder="Для семьи, работы или путешествий" aria-describedby="purpose-hint"></textarea>
-                            <span class="field-hint" id="purpose-hint">Достаточно пары слов.</span>
+                            Что хотите освоить?
+                            <textarea name="purpose" required rows="1" placeholder="Например, помощь близким" aria-describedby="purpose-hint"></textarea>
+                            <span class="field-hint" id="purpose-hint">Можно ответить в двух словах.</span>
                         </label>
-                        <button type="submit" class="btn">Записаться без оплаты</button>
+                        <button type="submit" class="btn">Оставить заявку без оплаты</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
                 </div>

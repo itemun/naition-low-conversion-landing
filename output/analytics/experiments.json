@@ -215,6 +215,19 @@
       "parent": "exp11-clear-base-offer",
       "hypothesis": "Explain the next step and no obligation to pay beside the form",
       "planned_visits": 100,
+      "status": "completed",
+      "commit": "8a7b586",
+      "visits": 100,
+      "orders": 25,
+      "errors": 0,
+      "duration_seconds": 547.6,
+      "decision": "Discard: no observed improvement over 30.8% baseline"
+    },
+    {
+      "version": "exp17-easy-field-copy",
+      "parent": "exp11-clear-base-offer",
+      "hypothesis": "Friendly short field labels and concrete answer examples reduce perceived questionnaire effort",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ],
@@ -265,7 +278,7 @@
       "errors": 0,
       "duration_seconds": 2589.5
     },
-    "screening_visits": 100,
+    "screening_visits": 50,
     "independent_confirmation_visits": 500,
     "hypotheses": [
       "Explain next step and absence of payment obligation",
@@ -274,6 +287,8 @@
       "Reduce visual form footprint without hiding fields",
       "Explicit selectable purpose suggestions without autofill"
     ],
-    "status": "active"
+    "status": "active",
+    "validation_visits": 100,
+    "sampling_note": "User requested 50-visit screens; exp16 already over 66/100, finish fixed 100; promising candidates get larger independent runs"
   }
 }
