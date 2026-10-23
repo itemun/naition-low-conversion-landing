@@ -241,6 +241,19 @@
       "parent": "exp11-clear-base-offer",
       "hypothesis": "Explain the purpose of phone and email fields to reduce hesitation about contact disclosure",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "fe42c4f",
+      "visits": 50,
+      "orders": 14,
+      "errors": 0,
+      "duration_seconds": 271.3,
+      "decision": "Discard explanatory contact hints; no observed improvement"
+    },
+    {
+      "version": "exp19-compact-two-column-form",
+      "parent": "exp11-clear-base-offer",
+      "hypothesis": "Reduce form visual footprint through smaller heading, spacing and wider panel while preserving two columns",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ],

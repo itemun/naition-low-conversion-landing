@@ -266,13 +266,11 @@
                         </label>
                         <label>
                             Телефон
-                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 900 123-45-67" aria-describedby="phone-hint">
-                            <span class="field-hint" id="phone-hint">Чтобы связаться с вами и подтвердить место.</span>
+                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 900 123-45-67">
                         </label>
                         <label>
                             E-mail
-                            <input type="email" name="email" required autocomplete="email" placeholder="name@example.ru" aria-describedby="email-hint">
-                            <span class="field-hint" id="email-hint">Чтобы отправить информацию о занятии.</span>
+                            <input type="email" name="email" required autocomplete="email" placeholder="name@example.ru">
                         </label>
                         <label>
                             Для чего вам курс?

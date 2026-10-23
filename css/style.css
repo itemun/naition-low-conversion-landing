@@ -475,3 +475,16 @@ img {
         transition: none !important;
     }
 }
+
+/* Compact form: preserve two-column reading order and generous controls. */
+.registration-panel { max-width: 960px; padding: 24px; }
+.registration-panel .section-title { font-size: 28px; line-height: 1.2; margin-bottom: 12px; }
+.registration-panel .section-lead { font-size: 16px; line-height: 1.4; margin-bottom: 16px; }
+.form-grid { gap: 12px 16px; }
+.form-grid label { gap: 5px; }
+.form-grid input, .form-grid textarea { padding: 10px 14px; min-height: 48px; }
+.form-message { margin-top: 8px; }
+@media (max-width: 720px) {
+    .registration-panel { padding: 20px; }
+    .registration-panel .section-title { font-size: 25px; }
+}
