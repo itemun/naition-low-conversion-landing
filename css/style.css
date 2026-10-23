@@ -475,7 +475,3 @@ img {
         transition: none !important;
     }
 }
-
-/* One clear vertical path through the required fields. */
-.registration-panel { max-width: 680px; }
-.registration-panel .form-grid { grid-template-columns: minmax(0, 1fr); }

@@ -293,6 +293,19 @@
       "parent": "exp11-clear-base-offer",
       "hypothesis": "Single vertical field sequence avoids horizontal scanning and improves completion decisions",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "826c5ae",
+      "visits": 50,
+      "orders": 18,
+      "errors": 0,
+      "duration_seconds": 276.1,
+      "decision": "Best screen in new series but inconclusive; candidate for independent retest"
+    },
+    {
+      "version": "exp23-exact-form-price",
+      "parent": "exp11-clear-base-offer",
+      "hypothesis": "Remove price uncertainty at the form by naming the complete base course price instead of from 4900",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ],
