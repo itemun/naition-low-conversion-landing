@@ -256,8 +256,7 @@
                 <div class="registration-panel">
                     <h2 class="section-title">Заявка на курс — без оплаты</h2>
                     <p class="section-lead">
-                        Базовый курс — 4 900 ₽ за полный день. Сертификат и памятка включены.
-                        14 ноября, 10:00–18:00, Москва.
+                        14 ноября, 10:00–18:00, Москва — от 4 900 ₽, сертификат включён.
                         Оставьте контакты: мы подтвердим место и ответим на вопросы до оплаты.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">

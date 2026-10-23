@@ -306,7 +306,21 @@
       "parent": "exp11-clear-base-offer",
       "hypothesis": "Remove price uncertainty at the form by naming the complete base course price instead of from 4900",
       "planned_visits": 50,
-      "status": "prepared"
+      "status": "completed",
+      "commit": "b4e85fc",
+      "visits": 50,
+      "orders": 17,
+      "errors": 0,
+      "duration_seconds": 279.6,
+      "decision": "Small inconclusive difference; retain as candidate rather than assume improvement"
+    },
+    {
+      "version": "exp24-focus-first-field",
+      "parent": "exp11-clear-base-offer",
+      "hypothesis": "Focus the name field after an explicit registration CTA click to remove an extra action before typing",
+      "planned_visits": 50,
+      "status": "prepared",
+      "measurement_note": "Automatic focus is not form_start; form_start still requires input"
     }
   ],
   "scope_update": {
