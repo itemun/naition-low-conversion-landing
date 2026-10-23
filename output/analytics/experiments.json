@@ -267,6 +267,19 @@
       "parent": "exp11-clear-base-offer",
       "hypothesis": "Offer explicit purpose suggestions to avoid composing a free-text answer from scratch",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "6186968",
+      "visits": 50,
+      "orders": 12,
+      "errors": 0,
+      "duration_seconds": 270.0,
+      "decision": "Discard purpose suggestions"
+    },
+    {
+      "version": "exp21-form-value-summary",
+      "parent": "exp11-clear-base-offer",
+      "hypothesis": "Reinforce the complete course value at the point where visitors decide whether to fill the form",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ],

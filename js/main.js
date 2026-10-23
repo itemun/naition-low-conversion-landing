@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registration-form');
     const message = document.getElementById('form-message');
     const registerButtons = document.querySelectorAll('.btn-register');
-    const version = 'exp20-purpose-suggestions';
+    const version = 'exp21-form-value-summary';
     const startedAt = Date.now();
     const seen = new Set();
     let lastPlacement = 'direct';
@@ -57,17 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!form) {
         return;
     }
-
-    document.querySelectorAll('[data-purpose]').forEach(button => {
-        button.addEventListener('click', () => {
-            const purpose = form.elements.namedItem('purpose');
-            if (!(purpose instanceof HTMLTextAreaElement)) return;
-            purpose.value = button.dataset.purpose;
-            purpose.dispatchEvent(new Event('input', { bubbles: true }));
-            purpose.dispatchEvent(new Event('change', { bubbles: true }));
-            purpose.focus({ preventScroll: true });
-        });
-    });
 
     let formStarted = false;
     form.addEventListener('input', () => {

@@ -254,6 +254,18 @@
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
+                    <aside class="registration-benefits" aria-label="Что входит в базовый курс">
+                        <p class="registration-eyebrow">ВАШ ПРАКТИЧЕСКИЙ ДЕНЬ</p>
+                        <h3>Навыки, которые помогут близким</h3>
+                        <p class="registration-price">4 900 ₽ <span>за полный курс</span></p>
+                        <ul>
+                            <li>Отработаете сердечно-лёгочную реанимацию на манекене</li>
+                            <li>Научитесь останавливать кровотечения и помогать при травмах</li>
+                            <li>Получите сертификат и памятку для повторения</li>
+                        </ul>
+                        <p>14 ноября · 10:00–18:00<br>Москва · группа до 14 человек</p>
+                    </aside>
+                    <div class="registration-fields">
                     <h2 class="section-title">Заявка на курс — без оплаты</h2>
                     <p class="section-lead">
                         14 ноября, 10:00–18:00, Москва — от 4 900 ₽, сертификат включён.
@@ -272,21 +284,15 @@
                             E-mail
                             <input type="email" name="email" required autocomplete="email" placeholder="name@example.ru">
                         </label>
-                        <div class="purpose-field">
                         <label>
                             Для чего вам курс?
                             <textarea name="purpose" required rows="1" placeholder="Для семьи, работы или путешествий" aria-describedby="purpose-hint"></textarea>
                             <span class="field-hint" id="purpose-hint">Достаточно пары слов.</span>
                         </label>
-                            <div class="purpose-options" role="group" aria-label="Примеры цели курса">
-                                <button type="button" data-purpose="Для семьи">Для семьи</button>
-                                <button type="button" data-purpose="Для работы">Для работы</button>
-                                <button type="button" data-purpose="Для путешествий">Для путешествий</button>
-                            </div>
-                        </div>
                         <button type="submit" class="btn">Оставить заявку без оплаты</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
+                    </div>
                 </div>
             </div>
         </section>
