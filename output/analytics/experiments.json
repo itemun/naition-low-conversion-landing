@@ -333,7 +333,13 @@
       "parent": "exp11-clear-base-offer",
       "hypothesis": "Begin with purpose and name before requesting contact details to reduce initial commitment",
       "planned_visits": 50,
-      "status": "prepared"
+      "status": "completed",
+      "commit": "8ec567c",
+      "visits": 50,
+      "orders": 22,
+      "errors": 0,
+      "duration_seconds": 283.0,
+      "decision": "Promising 44% screen; independently retest same version on 100"
     }
   ],
   "scope_update": {
@@ -404,6 +410,11 @@
       "errors": 0,
       "duration_seconds": 545.5,
       "decision": "No confirmed improvement over baseline; 49/150 pooled including selected screen"
+    },
+    "purpose_first_validation": {
+      "version": "exp25-purpose-first",
+      "planned_visits": 100,
+      "status": "prepared"
     }
   }
 }
