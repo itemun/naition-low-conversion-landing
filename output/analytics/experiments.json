@@ -327,6 +327,13 @@
       "errors": 0,
       "duration_seconds": 288.7,
       "decision": "Independent 100-visit retest of this minimal-change candidate before claiming uplift"
+    },
+    {
+      "version": "exp25-purpose-first",
+      "parent": "exp11-clear-base-offer",
+      "hypothesis": "Begin with purpose and name before requesting contact details to reduce initial commitment",
+      "planned_visits": 50,
+      "status": "prepared"
     }
   ],
   "scope_update": {
@@ -391,7 +398,12 @@
     "focus_validation": {
       "version": "exp24-focus-first-field",
       "planned_visits": 100,
-      "status": "prepared"
+      "status": "completed",
+      "visits": 100,
+      "orders": 31,
+      "errors": 0,
+      "duration_seconds": 545.5,
+      "decision": "No confirmed improvement over baseline; 49/150 pooled including selected screen"
     }
   }
 }

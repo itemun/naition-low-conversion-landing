@@ -261,21 +261,21 @@
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
-                            Имя
-                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
+                            Для чего вам курс?
+                            <textarea name="purpose" required rows="1" placeholder="Для семьи, работы или путешествий" aria-describedby="purpose-hint"></textarea>
+                            <span class="field-hint" id="purpose-hint">Достаточно пары слов.</span>
                         </label>
                         <label>
-                            Телефон
-                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 900 123-45-67">
+                            Имя
+                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
                         </label>
                         <label>
                             E-mail
                             <input type="email" name="email" required autocomplete="email" placeholder="name@example.ru">
                         </label>
                         <label>
-                            Для чего вам курс?
-                            <textarea name="purpose" required rows="1" placeholder="Для семьи, работы или путешествий" aria-describedby="purpose-hint"></textarea>
-                            <span class="field-hint" id="purpose-hint">Достаточно пары слов.</span>
+                            Телефон
+                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 900 123-45-67">
                         </label>
                         <button type="submit" class="btn">Оставить заявку без оплаты</button>
                     </form>

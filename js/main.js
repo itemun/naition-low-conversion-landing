@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registration-form');
     const message = document.getElementById('form-message');
     const registerButtons = document.querySelectorAll('.btn-register');
-    const version = 'exp24-focus-first-field';
+    const version = 'exp25-purpose-first';
     const startedAt = Date.now();
     const seen = new Set();
     let lastPlacement = 'direct';
@@ -51,8 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             registrationSection.scrollIntoView({ behavior: reducedMotion ? 'instant' : 'smooth', block: 'start' });
-            const firstField = form?.elements.namedItem('name');
-            if (firstField instanceof HTMLInputElement) firstField.focus({ preventScroll: true });
         });
     });
 
