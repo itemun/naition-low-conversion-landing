@@ -228,6 +228,19 @@
       "parent": "exp11-clear-base-offer",
       "hypothesis": "Friendly short field labels and concrete answer examples reduce perceived questionnaire effort",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "f5846df",
+      "visits": 50,
+      "orders": 16,
+      "errors": 0,
+      "duration_seconds": 289.2,
+      "decision": "Inconclusive vs 30.8% baseline; keep baseline for next independent hypothesis"
+    },
+    {
+      "version": "exp18-contact-purpose",
+      "parent": "exp11-clear-base-offer",
+      "hypothesis": "Explain the purpose of phone and email fields to reduce hesitation about contact disclosure",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ],

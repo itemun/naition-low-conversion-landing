@@ -261,21 +261,23 @@
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
-                            Ваше имя
-                            <input type="text" name="name" required autocomplete="name" placeholder="Например, Анна">
+                            Имя
+                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
                         </label>
                         <label>
-                            Телефон для связи
-                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 900 123-45-67">
+                            Телефон
+                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 900 123-45-67" aria-describedby="phone-hint">
+                            <span class="field-hint" id="phone-hint">Чтобы связаться с вами и подтвердить место.</span>
                         </label>
                         <label>
-                            Ваша почта
-                            <input type="email" name="email" required autocomplete="email" placeholder="name@example.ru">
+                            E-mail
+                            <input type="email" name="email" required autocomplete="email" placeholder="name@example.ru" aria-describedby="email-hint">
+                            <span class="field-hint" id="email-hint">Чтобы отправить информацию о занятии.</span>
                         </label>
                         <label>
-                            Что хотите освоить?
-                            <textarea name="purpose" required rows="1" placeholder="Например, помощь близким" aria-describedby="purpose-hint"></textarea>
-                            <span class="field-hint" id="purpose-hint">Можно ответить в двух словах.</span>
+                            Для чего вам курс?
+                            <textarea name="purpose" required rows="1" placeholder="Для семьи, работы или путешествий" aria-describedby="purpose-hint"></textarea>
+                            <span class="field-hint" id="purpose-hint">Достаточно пары слов.</span>
                         </label>
                         <button type="submit" class="btn">Оставить заявку без оплаты</button>
                     </form>
