@@ -476,16 +476,6 @@ img {
     }
 }
 
-.registration-panel { max-width: 1120px; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 32px; }
-.registration-benefits { background: #eef5ef; border-radius: 18px; padding: 24px; }
-.registration-eyebrow { font-size: 12px; letter-spacing: 0.08em; font-weight: 700; color: #175b50; margin-top: 0; }
-.registration-benefits h3 { font-size: 28px; line-height: 1.2; margin: 16px 0; }
-.registration-price { color: #175b50; font-size: 32px; font-weight: 700; }
-.registration-price span { display: block; font-size: 16px; font-weight: 400; }
-.registration-benefits ul { padding-left: 20px; }
-.registration-benefits li { margin: 12px 0; }
-.registration-fields { min-width: 0; }
-.registration-fields .section-title { font-size: 30px; }
-@media (max-width: 900px) { .registration-panel { grid-template-columns: 1fr; } }
-
-.registration-fields textarea { min-height: 80px; }
+/* One clear vertical path through the required fields. */
+.registration-panel { max-width: 680px; }
+.registration-panel .form-grid { grid-template-columns: minmax(0, 1fr); }

@@ -254,18 +254,6 @@
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
-                    <aside class="registration-benefits" aria-label="Что входит в базовый курс">
-                        <p class="registration-eyebrow">ВАШ ПРАКТИЧЕСКИЙ ДЕНЬ</p>
-                        <h3>Навыки, которые помогут близким</h3>
-                        <p class="registration-price">4 900 ₽ <span>за полный курс</span></p>
-                        <ul>
-                            <li>Отработаете сердечно-лёгочную реанимацию на манекене</li>
-                            <li>Научитесь останавливать кровотечения и помогать при травмах</li>
-                            <li>Получите сертификат и памятку для повторения</li>
-                        </ul>
-                        <p>14 ноября · 10:00–18:00<br>Москва · группа до 14 человек</p>
-                    </aside>
-                    <div class="registration-fields">
                     <h2 class="section-title">Заявка на курс — без оплаты</h2>
                     <p class="section-lead">
                         14 ноября, 10:00–18:00, Москва — от 4 900 ₽, сертификат включён.
@@ -292,7 +280,6 @@
                         <button type="submit" class="btn">Оставить заявку без оплаты</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
-                    </div>
                 </div>
             </div>
         </section>

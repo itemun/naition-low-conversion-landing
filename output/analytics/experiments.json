@@ -280,6 +280,19 @@
       "parent": "exp11-clear-base-offer",
       "hypothesis": "Reinforce the complete course value at the point where visitors decide whether to fill the form",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "7284cfe",
+      "visits": 50,
+      "orders": 9,
+      "errors": 0,
+      "duration_seconds": 273.0,
+      "decision": "Discard value summary panel; restore baseline"
+    },
+    {
+      "version": "exp22-single-column-form",
+      "parent": "exp11-clear-base-offer",
+      "hypothesis": "Single vertical field sequence avoids horizontal scanning and improves completion decisions",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ],
