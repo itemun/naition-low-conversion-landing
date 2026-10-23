@@ -414,7 +414,25 @@
     "purpose_first_validation": {
       "version": "exp25-purpose-first",
       "planned_visits": 100,
-      "status": "prepared"
+      "status": "completed",
+      "visits": 100,
+      "orders": 33,
+      "errors": 0,
+      "duration_seconds": 539.6,
+      "decision": "44% screening result did not reproduce; no compelling uplift vs 30.8% baseline"
+    },
+    "evidence_review": {
+      "status": "awaiting_offer_scope_clarification",
+      "target_achieved": false,
+      "current_live_version": "exp25-purpose-first",
+      "latest_independent_result": "33/100",
+      "best_screen": "22/50 (44%), followed by 33/100",
+      "baseline": "154/500 (30.8%)",
+      "tested_form_hypotheses": 10,
+      "panel_report_fields": "status, progress and event log only; no refusal reasons",
+      "observed_field_order": "name, phone, email, purpose in all 22 screening and 33 confirmation conversions despite purpose-first DOM order",
+      "inference": "The observed form drop-off does not establish form layout as the cause; selected screening peaks did not reproduce",
+      "next_step": "User clarification requested before changing course price or format; preserve original terms until answered"
     }
   }
 }
