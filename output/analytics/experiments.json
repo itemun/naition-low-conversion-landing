@@ -254,6 +254,19 @@
       "parent": "exp11-clear-base-offer",
       "hypothesis": "Reduce form visual footprint through smaller heading, spacing and wider panel while preserving two columns",
       "planned_visits": 50,
+      "status": "completed",
+      "commit": "d9f7fa1",
+      "visits": 50,
+      "orders": 11,
+      "errors": 0,
+      "duration_seconds": 277.2,
+      "decision": "Discard compact layout; restore baseline spacing"
+    },
+    {
+      "version": "exp20-purpose-suggestions",
+      "parent": "exp11-clear-base-offer",
+      "hypothesis": "Offer explicit purpose suggestions to avoid composing a free-text answer from scratch",
+      "planned_visits": 50,
       "status": "prepared"
     }
   ],
