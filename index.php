@@ -285,6 +285,8 @@
         </section>
     </main>
 
+    <button type="button" class="btn btn-register floating-register" data-cta="floating" hidden aria-controls="registration">Записаться</button>
+
     <footer class="site-footer">
         <div class="container">
             © 2026 Учебный центр «Спаси-Себя». Курс первой помощи, Москва.

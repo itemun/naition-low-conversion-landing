@@ -4,7 +4,7 @@
     const bytes = new Uint8Array(16);
     try { crypto.getRandomValues(bytes); } catch (_) { return; }
     const id = Array.from(bytes, b => b.toString(16).padStart(2, '0')).join('');
-    const version = 'exp11-clear-base-offer';
+    const version = 'exp15-red-centered-floating-cta';
     const qa = new URLSearchParams(location.search).get('analytics_qa') === '1';
     // Avoid collecting the live page embedded by Metrica's map viewer.
     if (new URLSearchParams(location.search).has('_ym_debug')) return;
@@ -59,7 +59,7 @@
         const mapping = { registration_page_view:'page', registration_cta_click:'cta', registration_form_view:'form_view', registration_form_start:'form_start', registration_submit_view:'submit_view', registration_validation_error:'validation_error', registration_submit:'submit', registration_submit_error:'submit_error', registration_success:'success' };
         const kind = mapping[goal];
         if (!kind) return;
-        const placement = { hero:'cta-hero', program:'cta-program', pricing_1:'cta-1', pricing_2:'cta-2', pricing_3:'cta-3' }[params.placement];
+        const placement = { floating:'cta-floating', hero:'cta-hero', program:'cta-program', pricing_1:'cta-1', pricing_2:'cta-2', pricing_3:'cta-3' }[params.placement];
         const field = ['name','phone','email','purpose'].includes(params.field) ? `field-${params.field}` : null;
         emit(kind, field || placement || (kind === 'page' ? 'page' : 'registration'));
         if (kind === 'success' || kind === 'submit_error') void flush();

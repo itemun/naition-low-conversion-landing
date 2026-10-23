@@ -191,6 +191,22 @@
       "errors": 0,
       "duration_seconds": 272.5,
       "decision": "Discard early credentials variant; select exp11 for independent confirmation"
+    },
+    {
+      "version": "exp15-red-centered-floating-cta",
+      "parent": "exp11-clear-base-offer",
+      "hypothesis": "Larger centered warm-red CTAs plus a floating CTA when inline CTAs are off-screen improve registration",
+      "planned_visits": 100,
+      "status": "prepared",
+      "rollback_tag": "baseline-before-red-cta",
+      "baseline_independent_run": "30/100",
+      "note": "Bundled hypothesis requested by user; effects of individual changes cannot be isolated",
+      "baseline_latest_run": {
+        "visits": 500,
+        "orders": 150,
+        "errors": 0,
+        "duration_seconds": 2585.5
+      }
     }
   ],
   "scope_update": {

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registration-form');
     const message = document.getElementById('form-message');
     const registerButtons = document.querySelectorAll('.btn-register');
-    const version = 'exp11-clear-base-offer';
+    const version = 'exp15-red-centered-floating-cta';
     const startedAt = Date.now();
     const seen = new Set();
     let lastPlacement = 'direct';
@@ -53,6 +53,33 @@ document.addEventListener('DOMContentLoaded', () => {
             registrationSection.scrollIntoView({ behavior: reducedMotion ? 'instant' : 'smooth', block: 'start' });
         });
     });
+
+    const floatingButton = document.querySelector('.floating-register');
+    const inlineButtons = [...registerButtons].filter(button => button !== floatingButton);
+    if (floatingButton && registrationSection) {
+        let framePending = false;
+        const updateFloatingButton = () => {
+            framePending = false;
+            const inlineVisible = inlineButtons.some(button => {
+                const rect = button.getBoundingClientRect();
+                return rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < innerHeight;
+            });
+            // Stay out of the way once the registration section enters the viewport.
+            const registrationReached = registrationSection.getBoundingClientRect().top < innerHeight;
+            floatingButton.hidden = scrollY < 80 || inlineVisible || registrationReached;
+        };
+        const scheduleFloatingUpdate = () => {
+            if (!framePending) {
+                framePending = true;
+                requestAnimationFrame(updateFloatingButton);
+            }
+        };
+        addEventListener('scroll', scheduleFloatingUpdate, { passive: true });
+        addEventListener('resize', scheduleFloatingUpdate);
+        const visibilityObserver = new IntersectionObserver(scheduleFloatingUpdate);
+        [...inlineButtons, registrationSection].forEach(element => visibilityObserver.observe(element));
+        updateFloatingButton();
+    }
 
     if (!form) {
         return;
