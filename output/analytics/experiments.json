@@ -319,8 +319,14 @@
       "parent": "exp11-clear-base-offer",
       "hypothesis": "Focus the name field after an explicit registration CTA click to remove an extra action before typing",
       "planned_visits": 50,
-      "status": "prepared",
-      "measurement_note": "Automatic focus is not form_start; form_start still requires input"
+      "status": "completed",
+      "measurement_note": "Automatic focus is not form_start; form_start still requires input",
+      "commit": "00f1e3a",
+      "visits": 50,
+      "orders": 18,
+      "errors": 0,
+      "duration_seconds": 288.7,
+      "decision": "Independent 100-visit retest of this minimal-change candidate before claiming uplift"
     }
   ],
   "scope_update": {
@@ -381,6 +387,11 @@
     ],
     "status": "active",
     "validation_visits": 100,
-    "sampling_note": "User requested 50-visit screens; exp16 already over 66/100, finish fixed 100; promising candidates get larger independent runs"
+    "sampling_note": "User requested 50-visit screens; exp16 already over 66/100, finish fixed 100; promising candidates get larger independent runs",
+    "focus_validation": {
+      "version": "exp24-focus-first-field",
+      "planned_visits": 100,
+      "status": "prepared"
+    }
   }
 }
